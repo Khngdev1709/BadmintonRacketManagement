@@ -1,0 +1,498 @@
+/* ==========================================================================
+   SMASH BADMINTON (VNB SPORTS THEME) - PRODUCT DETAIL STYLES
+   Breadcrumb, thumbnail gallery, large red price, promo box, yellow/orange buttons
+   ========================================================================== */
+
+/* Breadcrumb Navigation */
+.breadcrumb-section {
+  padding: 16px 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.breadcrumb-list a {
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-list a:hover {
+  color: var(--color-brand-orange);
+}
+
+.breadcrumb-separator {
+  color: #CCCCCC;
+}
+
+.breadcrumb-current {
+  color: var(--color-brand-orange);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   PRODUCT DETAIL CONTAINER (2-COLUMN)
+   -------------------------------------------------------------------------- */
+.product-detail-card {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+/* LEFT COLUMN: IMAGE VIEWER & THUMBNAIL GALLERY */
+.detail-media-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-image-viewer {
+  width: 100%;
+  height: 420px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-image-viewer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.main-image-viewer:hover img {
+  transform: scale(1.05);
+}
+
+.detail-badge-discount {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: var(--color-badge-red);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: var(--radius-xs);
+}
+
+.thumbnail-gallery-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.thumb-item-btn {
+  width: 72px;
+  height: 72px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.thumb-item-btn img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.thumb-item-btn:hover,
+.thumb-item-btn.active {
+  border-color: var(--color-brand-orange);
+  box-shadow: 0 0 0 1px var(--color-brand-orange);
+}
+
+/* RIGHT COLUMN: INFORMATION & ACTION AREA */
+.detail-info-pane {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-product-title {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--color-text-heading);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.detail-meta-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: 20px;
+}
+
+.meta-brand-name {
+  color: var(--color-brand-orange);
+  font-weight: 700;
+}
+
+.stock-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-success-green);
+  font-weight: 700;
+}
+
+/* Large Red Price Box */
+.detail-price-box {
+  background-color: #FBFBFB;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.detail-price-red {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-price-red);
+  line-height: 1;
+}
+
+.detail-price-old {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  text-decoration: line-through;
+}
+
+.detail-price-saving {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: var(--color-badge-red);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+}
+
+.detail-rental-banner {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--color-border-light);
+  font-size: 0.875rem;
+  color: #0284C7;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Special Promotion Box */
+.detail-promo-box {
+  border: 1px dashed var(--color-brand-orange);
+  background-color: var(--color-brand-orange-light);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 28px;
+}
+
+.promo-box-title {
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-brand-orange);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.promo-perks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--color-text-main);
+}
+
+.promo-perks-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.promo-perk-icon {
+  color: var(--color-brand-orange);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Quantity & Action Buttons Area */
+.detail-actions-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quantity-control-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.quantity-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+}
+
+.quantity-picker {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border-medium);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.btn-qty {
+  width: 36px;
+  height: 36px;
+  background-color: #F8F9FA;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-qty:hover {
+  background-color: #EEEEEE;
+}
+
+.qty-input {
+  width: 50px;
+  height: 36px;
+  border: none;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  outline: none;
+}
+
+/* Buy & Add Cart Buttons */
+.buttons-cluster-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Golden Yellow Button for "MUA NGAY" */
+.btn-buy-now-yellow {
+  padding: 14px 20px;
+  background-color: var(--color-brand-yellow);
+  color: var(--color-brand-yellow-text);
+  font-weight: 800;
+  font-size: 0.9375rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-brand-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(255, 193, 7, 0.3);
+}
+
+.btn-buy-now-yellow span {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  opacity: 0.85;
+  text-transform: none;
+  margin-top: 2px;
+}
+
+.btn-buy-now-yellow:hover {
+  background-color: var(--color-brand-yellow-hover);
+  border-color: var(--color-brand-yellow-hover);
+  transform: translateY(-2px);
+}
+
+/* Solid Bright Orange Button for Add To Cart */
+.btn-add-cart-orange {
+  padding: 14px 20px;
+  background-color: var(--color-brand-orange);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-brand-orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(234, 92, 11, 0.3);
+}
+
+.btn-add-cart-orange span {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  opacity: 0.9;
+  text-transform: none;
+  margin-top: 2px;
+}
+
+.btn-add-cart-orange:hover {
+  background-color: var(--color-brand-orange-hover);
+  border-color: var(--color-brand-orange-hover);
+  transform: translateY(-2px);
+}
+
+/* Secondary Button: Rent Trial */
+.btn-rent-trial {
+  width: 100%;
+  padding: 12px;
+  background-color: #F0F9FF;
+  border: 1px solid #BAE6FD;
+  color: #0369A1;
+  font-weight: 800;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-rent-trial:hover {
+  background-color: #E0F2FE;
+  border-color: #7DD3FC;
+}
+
+/* --------------------------------------------------------------------------
+   BOTTOM SPECS & DESCRIPTION TABS
+   -------------------------------------------------------------------------- */
+.detail-tabs-container {
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.tabs-header-bar {
+  display: flex;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.tab-nav-btn {
+  padding: 16px 24px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tab-nav-btn.active {
+  color: var(--color-brand-orange);
+  background-color: #FFFFFF;
+  border-bottom-color: var(--color-brand-orange);
+}
+
+.tab-panel-body {
+  padding: 32px;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  display: none;
+}
+
+.tab-panel-body.active {
+  display: block;
+}
+
+.specs-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.specs-data-table td {
+  padding: 10px 16px;
+  border: 1px solid var(--color-border-light);
+}
+
+.specs-data-table tr:nth-child(odd) td {
+  background-color: #FAFAFA;
+}
+
+.specs-label-col {
+  width: 200px;
+  font-weight: 700;
+  color: var(--color-text-heading);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .product-detail-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 24px;
+  }
+  .main-image-viewer {
+    height: 320px;
+  }
+  .buttons-cluster-row {
+    grid-template-columns: 1fr;
+  }
+}

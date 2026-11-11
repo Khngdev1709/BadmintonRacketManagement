@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Danh mục | Quản trị Hệ thống Vợt Cầu Lông</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/layout/variables.css">
+  <link rel="stylesheet" href="../../css/admin/category/category.css">
+  <script src="../../js/admin/admin-auth-guard.js"></script>
+</head>
+<body>
+
+  <div class="admin-layout">
+    
+    <!-- Clean White Sidebar with Bright Orange Highlight -->
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar-header">
+        <div class="admin-logo-mark">SEO</div>
+        <div>
+          <span class="admin-logo-title">SEO ADMIN</span>
+          <span class="admin-logo-sub">Cổng Quản Trị Hệ Thống</span>
+        </div>
+      </div>
+
+      <div class="admin-nav-section-title">Quản lý Cốt Lõi</div>
+      <ul class="admin-nav-menu">
+        <li class="admin-nav-item">
+          <a href="admin-categories.html" class="admin-nav-link active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Quản lý Danh mục</span>
+          </a>
+        </li>
+        <li class="admin-nav-item">
+          <a href="admin-products.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span>Quản lý Sản phẩm</span>
+          </a>
+        </li>
+        <li class="admin-nav-item">
+          <a href="admin-product-create.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Thêm Sản phẩm Mới</span>
+          </a>
+        </li>
+        <li class="admin-nav-item">
+          <a href="admin-orders.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            <span>Quản lý Đơn hàng</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="admin-nav-section-title">Khách Hàng & Vận Hành</div>
+      <ul class="admin-nav-menu">
+        <li class="admin-nav-item">
+          <a href="../../dashboard.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Bảng Điều Khiển Tài Khoản</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="admin-sidebar-footer">
+        <a href="../../index.html" class="admin-exit-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>Quay lại Cửa Hàng</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Admin Workspace -->
+    <main class="admin-workspace">
+      
+      <!-- Top Bar -->
+      <header class="admin-top-bar">
+        <div class="admin-breadcrumbs">
+          <span>Quản trị</span>
+          <span>/</span>
+          <span>Dữ liệu gốc</span>
+          <span>/</span>
+          <strong>Danh mục sản phẩm</strong>
+        </div>
+
+        <div class="admin-user-pill">
+          <div class="admin-avatar-small">AD</div>
+          <span style="font-size: 0.8125rem; font-weight: 700; color: #333333;">Quản trị viên Hệ thống</span>
+        </div>
+      </header>
+
+      <!-- Main Content Area -->
+      <section class="admin-content">
+        
+        <div class="admin-page-header">
+          <div>
+            <span class="admin-page-kicker">PHASE 1: DỮ LIỆU GỐC</span>
+            <h1 class="admin-page-title">QUẢN LÝ DANH MỤC</h1>
+            <p class="admin-page-desc">Tạo và cấu hình hệ thống phân loại vợt cho hệ thống bán lẻ và cho thuê toàn quốc.</p>
+          </div>
+
+          <button type="button" class="btn-admin btn-admin-primary" id="btnOpenAddCategory">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            <span>THÊM DANH MỤC MỚI</span>
+          </button>
+        </div>
+
+        <!-- Data Card & Table -->
+        <div class="data-card">
+          <div class="data-card-header">
+            <div class="data-card-title">
+              DANH SÁCH DANH MỤC HIỆN CÓ <span id="categoryCount" style="color: #64748B;">(0)</span>
+            </div>
+
+            <div class="data-search-box">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #64748B;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="categorySearchInput" class="data-search-input" placeholder="Tìm kiếm theo tên hoặc mô tả danh mục...">
+            </div>
+          </div>
+
+          <div class="sharp-table-wrapper">
+            <table class="sharp-data-table">
+              <thead>
+                <tr>
+                  <th style="width: 140px;">Mã Danh mục</th>
+                  <th style="width: 260px;">Tên Danh mục</th>
+                  <th>Mô tả SEO</th>
+                  <th style="width: 170px;">Thao tác</th>
+                </tr>
+              </thead>
+              <tbody id="categoryTableBody">
+                <!-- Dynamically populated by category.js via CategoryAPI -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Sharp Flat Modal (Create / Edit Category) -->
+  <div class="sharp-modal-overlay" id="categoryModalOverlay" role="dialog" aria-modal="true">
+    <div class="sharp-modal-card">
+      <div class="sharp-modal-header">
+        <h2 class="sharp-modal-title" id="categoryModalTitle">THÊM DANH MỤC MỚI</h2>
+        <button type="button" class="sharp-modal-close" id="btnCloseCategoryModal" aria-label="Đóng cửa sổ">&times;</button>
+      </div>
+
+      <form id="categoryForm" novalidate>
+        <div class="sharp-modal-body">
+          <div class="admin-form-group">
+            <label for="categoryNameInput" class="admin-form-label">Tên Danh mục *</label>
+            <input type="text" id="categoryNameInput" class="admin-form-input" placeholder="Ví dụ: Vợt Tấn Công Công Phá, Vợt Toàn Diện..." required maxlength="100">
+          </div>
+
+          <div class="admin-form-group">
+            <label for="categorySeoInput" class="admin-form-label">Mô tả SEO</label>
+            <textarea id="categorySeoInput" class="admin-form-input admin-form-textarea" placeholder="Mô tả tóm tắt thông số và định hướng người chơi để tối ưu hóa tìm kiếm..." maxlength="500"></textarea>
+          </div>
+        </div>
+
+        <div class="sharp-modal-footer">
+          <button type="button" class="btn-admin btn-admin-secondary" id="btnCancelCategoryModal">HỦY BỎ</button>
+          <button type="submit" class="btn-admin btn-admin-primary" id="btnSaveCategory">LƯU DANH MỤC</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../../js/admin/category/category-api.js"></script>
+  <script src="../../js/admin/category/category.js"></script>
+</body>
+</html>

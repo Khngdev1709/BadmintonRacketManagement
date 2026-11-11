@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tài Khoản Khách Hàng | SMASH SEO SPORTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout/variables.css">
+  <link rel="stylesheet" href="css/layout/layout.css">
+  <link rel="stylesheet" href="css/dashboard/dashboard.css">
+  <link rel="stylesheet" href="css/rental/rental.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="site-container top-notice-content">
+      <div>Hệ thống bán lẻ & cho thuê vợt cầu lông chính hãng toàn quốc</div>
+      <div><span class="notice-highlight">MIỄN PHÍ CĂNG CƯỚC</span> CHO MỌI ĐƠN HÀNG MUA VỢT • GIAO HỎA TỐC 2H</div>
+    </div>
+  </div>
+
+  <!-- Global Two-Row Header -->
+  <header class="site-header">
+    
+    <!-- Top Row (White Background) -->
+    <div class="header-top-row">
+      <div class="site-container header-top-inner">
+        
+        <!-- Logo (Left) -->
+        <a href="index.html" class="site-logo">
+          <div class="logo-badge">SEO</div>
+          <div class="logo-text-group">
+            <span class="logo-title">SMASH SEO</span>
+            <span class="logo-subtitle">Hệ Thống Cầu Lông Số 1</span>
+          </div>
+        </a>
+
+        <!-- Hotline with Red Text (Center-Left) -->
+        <div class="header-hotline">
+          <div class="hotline-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="hotline-meta">
+            <span class="hotline-label">Hotline tư vấn</span>
+            <span class="hotline-phone">0788.612.979</span>
+          </div>
+        </div>
+
+        <!-- Wide Search Bar with Light Gray Background (Center) -->
+        <div class="header-search">
+          <form class="search-form" id="headerSearchForm">
+            <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm vợt Yonex Astrox, Victor Thruster, Lining...">
+            <button type="submit" class="search-button" aria-label="Tìm kiếm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Icons: Tracking, Account, Cart -->
+        <div class="header-top-actions">
+          
+          <a href="user-orders.html" class="header-action-item" title="Tra cứu đơn hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Tra cứu</span>
+              <span class="action-val">Đơn hàng</span>
+            </div>
+          </a>
+
+          <div id="headerUserAction">
+            <!-- Dynamically populated by layout.js -->
+          </div>
+
+          <a href="cart.html" class="header-action-item" title="Giỏ hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="cart-count-badge" id="navCartCount" style="display: none;">0</span>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Giỏ hàng</span>
+              <span class="action-val">Mua sắm</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Row (Solid Orange Navbar) -->
+    <nav class="header-bottom-navbar">
+      <div class="site-container">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="index.html" class="nav-menu-link">Trang chủ</a></li>
+          <li class="nav-menu-item"><a href="products.html" class="nav-menu-link">Sản phẩm</a></li>
+          <li class="nav-menu-item"><a href="dashboard.html#rentals" class="nav-menu-link">Dịch Vụ Thuê Vợt</a></li>
+          <li class="nav-menu-item"><a href="index.html#news" class="nav-menu-link">Tin tức</a></li>
+          <li class="nav-menu-item"><a href="index.html#contact" class="nav-menu-link">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Clean Bright Dashboard Layout -->
+  <main class="dashboard-main-container">
+    
+    <!-- White Sidebar with Orange Highlight -->
+    <aside class="dashboard-sidebar-card">
+      <div class="sidebar-user-header">
+        <div class="sidebar-avatar-circle" id="sidebarAvatar">H</div>
+        <div class="sidebar-user-meta">
+          <span class="sidebar-user-greeting">Xin chào,</span>
+          <span class="sidebar-user-name" id="sidebarUserName">Nguyễn Văn Hùng</span>
+          <span class="sidebar-role-badge" id="sidebarUserRole">Thành Viên SEO VIP</span>
+        </div>
+      </div>
+
+      <ul class="sidebar-menu-list">
+        <li class="sidebar-menu-item">
+          <button type="button" class="sidebar-tab-btn active" data-tab="overview">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Tổng quan</span>
+          </button>
+        </li>
+
+        <li class="sidebar-menu-item">
+          <button type="button" class="sidebar-tab-btn" data-tab="orders">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span>Đơn hàng của tôi</span>
+            <span class="sidebar-tab-badge" id="sidebarOrdersBadge">0</span>
+          </button>
+        </li>
+
+        <li class="sidebar-menu-item">
+          <button type="button" class="sidebar-tab-btn" data-tab="rentals">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Vợt đang thuê</span>
+            <span class="sidebar-tab-badge" id="sidebarRentalsBadge" style="background-color: #E0F2FE; color: #0284C7;">0 Đang thuê</span>
+          </button>
+        </li>
+
+        <li class="sidebar-menu-item">
+          <button type="button" class="sidebar-tab-btn" data-tab="profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Thông tin tài khoản</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="sidebar-footer-cluster">
+        <button type="button" class="btn-sidebar-signout" id="btnSidebarLogout">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          <span>Đăng xuất</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Right Workspace Card -->
+    <section class="dashboard-workspace-card">
+      
+      <!-- Workspace Header -->
+      <div class="workspace-header-bar">
+        <div>
+          <span class="workspace-header-kicker" id="workspaceKicker">TRUNG TÂM TÀI KHOẢN</span>
+          <h1 class="workspace-header-title" id="workspaceHeading">TỔNG QUAN TÀI KHOẢN</h1>
+        </div>
+        <a href="products.html" class="btn-save-profile" style="padding: 9px 18px; font-size: 0.8125rem;">
+          MUA SẮM THÊM
+        </a>
+      </div>
+
+      <!-- Panel 1: Overview -->
+      <div class="dashboard-view-panel active" id="view-overview">
+        <div class="dashboard-metrics-grid">
+          <div class="metric-stat-box">
+            <span class="metric-stat-label">Tổng Chi Tiêu</span>
+            <span class="metric-stat-number" id="overviewTotalSpent" style="font-size: 1.5rem;">0 ₫</span>
+            <span class="metric-stat-sub" id="overviewTotalOrdersSub">0 Đơn Hàng Đã Mua</span>
+          </div>
+
+          <div class="metric-stat-box cyan-accent">
+            <span class="metric-stat-label">Vợt Đang Thuê</span>
+            <span class="metric-stat-number" id="overviewActiveRentals">0</span>
+            <span class="metric-stat-sub" id="overviewActiveRentalsSub" style="color: #0284C7;">Chưa có hợp đồng thuê</span>
+          </div>
+
+          <div class="metric-stat-box green-accent">
+            <span class="metric-stat-label">Tiền Cọc Bảo Lưu</span>
+            <span class="metric-stat-number" id="overviewDepositHeld" style="font-size: 1.5rem;">0 ₫</span>
+            <span class="metric-stat-sub" id="overviewDepositSub" style="color: var(--color-success-green);">Hoàn 100% khi trả vợt</span>
+          </div>
+
+          <div class="metric-stat-box">
+            <span class="metric-stat-label">Số LBS Thường Căng</span>
+            <span class="metric-stat-number" id="overviewPreferredTension" style="font-size: 1.5rem;">11.0 KG</span>
+            <span class="metric-stat-sub" id="overviewPreferredTensionSub">Tiêu Chuẩn Phong Trào</span>
+          </div>
+        </div>
+
+        <div class="dashboard-table-card">
+          <div class="table-card-header">
+            <span class="table-card-title">ĐƠN HÀNG GẦN ĐÂY</span>
+            <a href="javascript:void(0)" onclick="document.querySelector('[data-tab=\'orders\']').click();" style="color: var(--color-brand-orange); font-weight: 700; font-size: 0.8125rem;">XEM TẤT CẢ &rarr;</a>
+          </div>
+          <table class="vnb-clean-table">
+            <thead>
+              <tr>
+                <th>Mã Đơn</th>
+                <th>Ngày Đặt</th>
+                <th>Sản Phẩm</th>
+                <th>Tổng Tiền</th>
+                <th>Trạng Thái</th>
+              </tr>
+            </thead>
+            <tbody id="overviewRecentOrdersTableBody">
+              <!-- Dynamically populated from database via dashboard.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Panel 2: Orders -->
+      <div class="dashboard-view-panel" id="view-orders">
+        <div class="dashboard-table-card">
+          <div class="table-card-header">
+            <span class="table-card-title">TẤT CẢ ĐƠN HÀNG MUA VỢT</span>
+          </div>
+          <table class="vnb-clean-table">
+            <thead>
+              <tr>
+                <th>Mã Đơn</th>
+                <th>Ngày Đặt</th>
+                <th>Chi Tiết Sản Phẩm</th>
+                <th>Tổng Thanh Toán</th>
+                <th>Giao Hàng</th>
+                <th>Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody id="dashboardOrdersTableBody">
+              <!-- Populated by dashboard.js via DashboardAPI -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Panel 3: Rentals -->
+      <div class="dashboard-view-panel" id="view-rentals">
+        <div style="margin-bottom: 20px; font-size: 0.875rem; color: #666666;">
+          Dịch vụ thuê vợt chính hãng SMASH SEO giúp quý khách tự do trải nghiệm mọi cây vợt trước khi xuống tiền mua mới. Tiền cọc được hoàn lại 100% khi hoàn tất trả vợt.
+        </div>
+        <div class="rentals-feed-list" id="dashboardRentalsContainer">
+          <!-- Populated by dashboard.js via DashboardAPI -->
+        </div>
+      </div>
+
+      <!-- Panel 4: Profile -->
+      <div class="dashboard-view-panel" id="view-profile">
+        <form id="vnbProfileForm" novalidate>
+          <div class="profile-form-grid">
+            <div class="vnb-form-group">
+              <label for="profNameInput" class="vnb-form-label">Họ và Tên *</label>
+              <input type="text" id="profNameInput" class="vnb-form-input" required>
+            </div>
+
+            <div class="vnb-form-group">
+              <label for="profEmailInput" class="vnb-form-label">Địa Chỉ Email *</label>
+              <input type="email" id="profEmailInput" class="vnb-form-input" required>
+            </div>
+
+            <div class="vnb-form-group">
+              <label for="profPhoneInput" class="vnb-form-label">Số Điện Thoại Nhận Hàng *</label>
+              <input type="tel" id="profPhoneInput" class="vnb-form-input" required>
+            </div>
+
+            <div class="vnb-form-group">
+              <label for="profAddressInput" class="vnb-form-label">Địa Chỉ Giao Hàng Mặc Định</label>
+              <input type="text" id="profAddressInput" class="vnb-form-input">
+            </div>
+
+            <div class="vnb-form-group">
+              <label for="profStyleInput" class="vnb-form-label">Lối Chơi Sở Trường</label>
+              <select id="profStyleInput" class="vnb-form-input">
+                <option value="Thiên công / Đập cầu cắm sân">Thiên công / Đập cầu cắm sân (Vợt nặng đầu)</option>
+                <option value="Công thủ toàn diện / Linh hoạt">Công thủ toàn diện / Linh hoạt (Vợt cân bằng)</option>
+                <option value="Phản tạt tốc độ / Đứng lưới">Phản tạt tốc độ / Đứng lưới (Vợt nhẹ đầu)</option>
+              </select>
+            </div>
+
+            <div class="vnb-form-group">
+              <label for="profTensionInput" class="vnb-form-label">Mức Căng Cước Yêu Thích</label>
+              <select id="profTensionInput" class="vnb-form-input">
+                <option value="10.5 kg (23.0 LBS)">10.5 kg (23.0 LBS) - Mới chơi / Trợ lực</option>
+                <option value="11.0 kg (24.0 LBS)">11.0 kg (24.0 LBS) - Phong trào tiêu chuẩn</option>
+                <option value="11.5 kg (25.5 LBS)" selected>11.5 kg (25.5 LBS) - Bán chuyên nghiệp</option>
+                <option value="12.0 kg (26.5 LBS)">12.0 kg (26.5 LBS) - Chuyên nghiệp lực tay khỏe</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-save-profile">
+            LƯU THAY ĐỔI HỒ SƠ
+          </button>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Clean Standard Footer (Vietnamese Retail) -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-main-grid">
+        <div>
+          <h3 class="footer-col-title">HỆ THỐNG CỬA HÀNG SMASH SEO</h3>
+          <ul class="footer-contact-info">
+            <li><strong>Địa chỉ:</strong> 409 Huỳnh Văn Bánh, P.11, Q.Phú Nhuận, TP.Hồ Chí Minh</li>
+            <li><strong>Hotline Bán Hàng:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0788.612.979</span></li>
+            <li><strong>Hotline Thuê Vợt:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0969.123.456</span></li>
+            <li><strong>Email:</strong> cskh@smashseo.com</li>
+            <li><strong>Giờ mở cửa:</strong> 08:00 - 21:30 (Thứ 2 - Chủ Nhật)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">HỖ TRỢ KHÁCH HÀNG</h3>
+          <ul class="footer-links-list">
+            <li><a href="#">Hướng dẫn mua hàng online</a></li>
+            <li><a href="#">Chính sách bảo hành cước & khung</a></li>
+            <li><a href="#">Quy định đặt cọc & thuê vợt</a></li>
+            <li><a href="#">Chính sách đổi trả trong 7 ngày</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">DANH MỤC NỔI BẬT</h3>
+          <ul class="footer-links-list">
+            <li><a href="products.html?brand=Yonex">Vợt Yonex Astrox</a></li>
+            <li><a href="products.html?brand=Victor">Vợt Victor Thruster</a></li>
+            <li><a href="products.html?brand=Lining">Vợt Li-Ning Axforce</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">BẢN TIN KHUYẾN MÃI</h3>
+          <p style="font-size: 0.8125rem; color: #666666;">Đăng ký để nhận thông báo cước mới và vợt giảm giá sớm nhất.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 SMASH SEO SPORTS - Bản quyền thuộc Công ty TNHH Cầu Lông Thể Thao.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/search/search-api.js"></script>
+  <script src="js/layout/layout.js"></script>
+  <script src="js/rental/rental-api.js"></script>
+  <script src="js/rental/rentals.js"></script>
+  <script src="js/dashboard/dashboard-api.js"></script>
+  <script src="js/dashboard/dashboard.js"></script>
+</body>
+</html>

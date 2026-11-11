@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMASH SEO SPORTS | Hệ Thống Bán Lẻ & Cho Thuê Vợt Cầu Lông Số 1 Việt Nam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout/variables.css">
+  <link rel="stylesheet" href="css/layout/layout.css">
+  <link rel="stylesheet" href="css/home/home.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="site-container top-notice-content">
+      <div>Hệ thống bán lẻ & cho thuê vợt cầu lông chính hãng toàn quốc</div>
+      <div><span class="notice-highlight">MIỄN PHÍ CĂNG CƯỚC</span> CHO MỌI ĐƠN HÀNG MUA VỢT • GIAO HỎA TỐC 2H</div>
+    </div>
+  </div>
+
+  <!-- Global Two-Row Header -->
+  <header class="site-header">
+    
+    <!-- Top Row (White Background) -->
+    <div class="header-top-row">
+      <div class="site-container header-top-inner">
+        
+        <!-- Logo (Left) -->
+        <a href="index.html" class="site-logo">
+          <div class="logo-badge">SEO</div>
+          <div class="logo-text-group">
+            <span class="logo-title">SMASH SEO</span>
+            <span class="logo-subtitle">Hệ Thống Cầu Lông Số 1</span>
+          </div>
+        </a>
+
+        <!-- Hotline with Red Text (Center-Left) -->
+        <div class="header-hotline">
+          <div class="hotline-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="hotline-meta">
+            <span class="hotline-label">Hotline tư vấn</span>
+            <span class="hotline-phone">0788.612.979</span>
+          </div>
+        </div>
+
+        <!-- Wide Search Bar with Light Gray Background (Center) -->
+        <div class="header-search">
+          <form class="search-form" id="headerSearchForm">
+            <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm vợt Yonex Astrox, Victor Thruster, Lining...">
+            <button type="submit" class="search-button" aria-label="Tìm kiếm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Icons: Tracking, Account, Cart -->
+        <div class="header-top-actions">
+          
+          <a href="user-orders.html" class="header-action-item" title="Tra cứu đơn hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Tra cứu</span>
+              <span class="action-val">Đơn hàng</span>
+            </div>
+          </a>
+
+          <div id="headerUserAction">
+            <!-- Dynamically populated by layout.js (Sign in / User menu) -->
+          </div>
+
+          <a href="cart.html" class="header-action-item" title="Giỏ hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="cart-count-badge" id="navCartCount" style="display: none;">0</span>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Giỏ hàng</span>
+              <span class="action-val">Mua sắm</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Row (Solid Orange Navbar) -->
+    <nav class="header-bottom-navbar">
+      <div class="site-container">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="index.html" class="nav-menu-link active">Trang chủ</a></li>
+          <li class="nav-menu-item"><a href="products.html" class="nav-menu-link">Sản phẩm</a></li>
+          <li class="nav-menu-item"><a href="dashboard.html#rentals" class="nav-menu-link">Dịch Vụ Thuê Vợt</a></li>
+          <li class="nav-menu-item"><a href="#news" class="nav-menu-link">Tin tức</a></li>
+          <li class="nav-menu-item"><a href="#contact" class="nav-menu-link">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Storefront Content -->
+  <main class="site-container">
+    
+    <!-- Hero Banner Promo -->
+    <section class="home-hero-banner">
+      <div class="hero-banner-card">
+        <div class="hero-banner-content">
+          <span class="hero-banner-tag">CHÍNH HÃNG 100% - BẢO HÀNH 3 THÁNG</span>
+          <h1 class="hero-banner-title">HỆ THỐNG PHÂN PHỐI & CHO THUÊ VỢT CẦU LÔNG</h1>
+          <p class="hero-banner-desc">
+            Sở hữu các dòng vợt thi đấu cao cấp nhất thế giới từ Yonex, Victor, Li-Ning. Dịch vụ cho thuê vợt trải nghiệm trước khi mua với giá chỉ từ 70.000 ₫/ngày.
+          </p>
+          <a href="#catalogGrid" class="hero-banner-btn">
+            <span>MUA & THUÊ VỢT NGAY</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=800&auto=format&fit=crop" alt="Badminton Racket" class="hero-banner-decor-img">
+      </div>
+    </section>
+
+    <!-- 2-Column Catalog Layout -->
+    <div class="catalog-main-layout" id="catalogGrid">
+      
+      <!-- Left Sidebar (Filters) -->
+      <aside class="catalog-sidebar">
+        
+        <div class="filter-card">
+          <div class="filter-card-header">
+            <h2 class="filter-card-title">BỘ LỌC TÌM KIẾM</h2>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="filter-group">
+            <h3 class="filter-group-title">MỨC GIÁ</h3>
+            <ul class="filter-options-list">
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterPrice" value="all" checked>
+                  <span>Tất cả mức giá</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterPrice" value="under2m">
+                  <span>Dưới 2.000.000 ₫</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterPrice" value="2m-4m">
+                  <span>2.000.000 ₫ - 4.000.000 ₫</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterPrice" value="over4m">
+                  <span>Trên 4.000.000 ₫</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Brand Filter -->
+          <div class="filter-group">
+            <h3 class="filter-group-title">THƯƠNG HIỆU</h3>
+            <ul class="filter-options-list">
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterBrand" value="all" checked>
+                  <span>Tất cả thương hiệu</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterBrand" value="Yonex">
+                  <span>Yonex (Nhật Bản)</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterBrand" value="Victor">
+                  <span>Victor (Đài Loan)</span>
+                </label>
+              </li>
+              <li>
+                <label class="filter-checkbox-item">
+                  <input type="radio" name="filterBrand" value="Lining">
+                  <span>Li-Ning (Quốc Tế)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div style="padding: 10px 16px 16px;">
+            <button type="button" class="btn-reset-filters" id="btnResetFilters">XÓA BỘ LỌC</button>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Right Content: Products Grid -->
+      <section class="catalog-content-area">
+        
+        <div class="catalog-toolbar">
+          <div>
+            <span class="catalog-toolbar-title">SẢN PHẨM NỔI BẬT</span>
+            <span class="catalog-toolbar-count" id="catalogTotalCount">(Hiển thị 0 sản phẩm)</span>
+          </div>
+
+          <div class="catalog-sort-box">
+            <label for="catalogSortSelect">Sắp xếp theo:</label>
+            <select id="catalogSortSelect" class="catalog-sort-select">
+              <option value="id,desc" selected>Mới nhất</option>
+              <option value="sellPrice,asc">Giá tăng dần</option>
+              <option value="sellPrice,desc">Giá giảm dần</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Cards Grid (Populated via GET /api/public/products) -->
+        <div class="products-grid" id="publicProductsGrid">
+          <!-- Dynamically created by home.js -->
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Clean Standard Footer (Vietnamese Retail) -->
+  <footer class="site-footer" id="contact">
+    <div class="site-container">
+      <div class="footer-main-grid">
+        
+        <!-- Store Info -->
+        <div>
+          <h3 class="footer-col-title">HỆ THỐNG CỬA HÀNG SMASH SEO</h3>
+          <ul class="footer-contact-info">
+            <li><strong>Địa chỉ:</strong> 409 Huỳnh Văn Bánh, P.11, Q.Phú Nhuận, TP.Hồ Chí Minh</li>
+            <li><strong>Hotline Bán Hàng:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0788.612.979</span></li>
+            <li><strong>Hotline Thuê Vợt:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0969.123.456</span></li>
+            <li><strong>Email:</strong> cskh@smashseo.com</li>
+            <li><strong>Giờ mở cửa:</strong> 08:00 - 21:30 (Thứ 2 - Chủ Nhật)</li>
+          </ul>
+        </div>
+
+        <!-- Links 1 -->
+        <div>
+          <h3 class="footer-col-title">HỖ TRỢ KHÁCH HÀNG</h3>
+          <ul class="footer-links-list">
+            <li><a href="#">Hướng dẫn mua hàng online</a></li>
+            <li><a href="#">Chính sách bảo hành cước & khung</a></li>
+            <li><a href="#">Quy định đặt cọc & thuê vợt</a></li>
+            <li><a href="#">Chính sách đổi trả trong 7 ngày</a></li>
+            <li><a href="#">Bảng giá dịch vụ căng cước</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div>
+          <h3 class="footer-col-title">DANH MỤC NỔI BẬT</h3>
+          <ul class="footer-links-list">
+            <li><a href="products.html?brand=Yonex">Vợt Yonex Astrox</a></li>
+            <li><a href="products.html?brand=Victor">Vợt Victor Thruster</a></li>
+            <li><a href="products.html?brand=Lining">Vợt Li-Ning Axforce</a></li>
+            <li><a href="products.html">Dòng vợt trợ lực cho nữ</a></li>
+            <li><a href="dashboard.html#rentals">Thuê vợt thi đấu cuối tuần</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="footer-col-title">NHẬN BẢN TIN KHUYẾN MÃI</h3>
+          <div class="footer-newsletter-box">
+            <p>Đăng ký email để nhận ngay voucher giảm 50.000 ₫ cho lần mua hoặc thuê vợt đầu tiên.</p>
+            <form class="footer-newsletter-form" onsubmit="event.preventDefault(); window.showToast('Cảm ơn quý khách đã đăng ký nhận tin khuyến mãi!');">
+              <input type="email" class="footer-newsletter-input" placeholder="Nhập email của bạn..." required>
+              <button type="submit" class="footer-newsletter-btn">GỬI</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 SMASH SEO SPORTS - Bản quyền thuộc Công ty TNHH Cầu Lông Thể Thao.</div>
+        <div>Giấy chứng nhận ĐKKD số: 0312984921 do Sở KH & ĐT TP.HCM cấp.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/search/search-api.js"></script>
+  <script src="js/layout/layout.js"></script>
+  <script src="js/home/home-api.js"></script>
+  <script src="js/home/home.js"></script>
+</body>
+</html>

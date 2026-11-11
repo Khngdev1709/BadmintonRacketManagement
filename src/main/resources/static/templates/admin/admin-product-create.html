@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm Vợt Mới | Quản trị Hệ thống Vợt Cầu Lông</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/layout/variables.css">
+  <link rel="stylesheet" href="../../css/admin/product/product.css">
+  <script src="../../js/admin/admin-auth-guard.js"></script>
+</head>
+<body>
+
+  <div class="admin-layout">
+    
+    <!-- Clean White Sidebar with Bright Orange Highlight -->
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar-header">
+        <div class="admin-logo-mark">SEO</div>
+        <div>
+          <span class="admin-logo-title">SEO ADMIN</span>
+          <span class="admin-logo-sub">Cổng Quản Trị Hệ Thống</span>
+        </div>
+      </div>
+
+      <div class="admin-nav-section-title">Quản lý Cốt Lõi</div>
+      <ul class="admin-nav-menu">
+        <li class="admin-nav-item">
+          <a href="admin-categories.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Quản lý Danh mục</span>
+          </a>
+        </li>
+        <li class="admin-nav-item">
+          <a href="admin-products.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span>Quản lý Sản phẩm</span>
+          </a>
+        </li>
+        <li class="admin-nav-item">
+          <a href="admin-product-create.html" class="admin-nav-link active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            <span>Thêm Sản phẩm Mới</span>
+          </a>
+        </li>
+        <li class="admin-nav-item">
+          <a href="admin-orders.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            <span>Quản lý Đơn hàng</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="admin-nav-section-title">Khách Hàng & Vận Hành</div>
+      <ul class="admin-nav-menu">
+        <li class="admin-nav-item">
+          <a href="../../dashboard.html" class="admin-nav-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Bảng Điều Khiển Tài Khoản</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="admin-sidebar-footer">
+        <a href="../../index.html" class="admin-exit-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>Quay lại Cửa Hàng</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Admin Workspace -->
+    <main class="admin-workspace">
+      
+      <!-- Top Bar -->
+      <header class="admin-top-bar">
+        <div class="admin-breadcrumbs">
+          <span>Quản trị</span>
+          <span>/</span>
+          <span>Dữ liệu gốc</span>
+          <span>/</span>
+          <a href="admin-products.html" style="color: #64748B; text-decoration: none;">Sản phẩm</a>
+          <span>/</span>
+          <strong>Tạo mới vợt</strong>
+        </div>
+
+        <div class="admin-user-pill">
+          <div class="admin-avatar-small">AD</div>
+          <span style="font-size: 0.8125rem; font-weight: 700; color: #333333;">Quản trị viên Hệ thống</span>
+        </div>
+      </header>
+
+      <!-- Main Content Area -->
+      <section class="admin-content">
+        
+        <div class="admin-page-header">
+          <div>
+            <span class="admin-page-kicker">PHASE 1: DỮ LIỆU GỐC</span>
+            <h1 class="admin-page-title">ĐĂNG KÝ VỢT MỚI</h1>
+            <p class="admin-page-desc">Nhập thông số kỹ thuật vợt, cấu hình số lượng tồn kho và tải lên hình ảnh sản phẩm thực tế.</p>
+          </div>
+
+          <a href="admin-products.html" class="btn-admin btn-admin-secondary">
+            &larr; QUAY LẠI DANH SÁCH
+          </a>
+        </div>
+
+        <!-- Full Creation Form Container -->
+        <div class="create-product-container">
+          <form id="createProductFullForm" novalidate>
+            
+            <div class="form-grid-2col">
+              <div class="admin-form-group">
+                <label for="createProdName" class="admin-form-label">Tên Mẫu Vợt *</label>
+                <input type="text" id="createProdName" class="admin-form-input" placeholder="Ví dụ: Vợt Cầu Lông Yonex Astrox 100ZZ Kurenai" required maxlength="200">
+              </div>
+
+              <div class="admin-form-group">
+                <label for="createProdBrand" class="admin-form-label">Thương hiệu</label>
+                <input type="text" id="createProdBrand" class="admin-form-input" placeholder="Ví dụ: Yonex, Victor, Lining" maxlength="100">
+              </div>
+            </div>
+
+            <div class="form-grid-3col">
+              <div class="admin-form-group">
+                <label for="createProdCategory" class="admin-form-label">Danh mục đích *</label>
+                <select id="createProdCategory" class="admin-form-select" required>
+                  <!-- Populated dynamically from CategoryAPI -->
+                </select>
+              </div>
+
+              <div class="admin-form-group">
+                <label for="createProdCondition" class="admin-form-label">Tình trạng *</label>
+                <select id="createProdCondition" class="admin-form-select">
+                  <option value="New" selected>Mới (New)</option>
+                  <option value="Used">Đã qua sử dụng (Used)</option>
+                </select>
+              </div>
+
+              <div class="admin-form-group">
+                <label for="createProdStock" class="admin-form-label">Số lượng ban đầu *</label>
+                <input type="number" id="createProdStock" class="admin-form-input" value="10" min="0" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2col">
+              <div class="admin-form-group">
+                <label for="createProdSellPrice" class="admin-form-label">Giá bán niêm yết (VNĐ) *</label>
+                <input type="number" id="createProdSellPrice" class="admin-form-input" step="1000" min="0" placeholder="4290000" required>
+              </div>
+
+              <div class="admin-form-group">
+                <label for="createProdRentPrice" class="admin-form-label">Giá thuê theo ngày (VNĐ/ngày) *</label>
+                <input type="number" id="createProdRentPrice" class="admin-form-input" step="1000" min="0" placeholder="120000" required>
+              </div>
+            </div>
+
+            <!-- File Upload Zone (Crucial Step: Uploads to FileController first) -->
+            <div class="admin-form-group" style="margin-bottom: 20px;">
+              <label class="admin-form-label">Hình ảnh sản phẩm (Tải lên FileController)</label>
+              <div class="image-upload-zone" id="createImageDropZone">
+                <input type="file" id="createFileInput" accept="image/*">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="upload-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="8" x2="12" y2="15"></line></svg>
+                <div class="upload-prompt-text">Chọn hoặc kéo thả tệp hình ảnh vợt</div>
+                <div class="upload-hint-text">Định dạng hỗ trợ: PNG, JPG, WEBP. Dung lượng tối đa: 10MB</div>
+              </div>
+              <div class="image-preview-cluster" id="createImagePreviewCluster"></div>
+            </div>
+
+            <div class="admin-form-group" style="margin-bottom: 28px;">
+              <label for="createProdDesc" class="admin-form-label">Mô tả công nghệ & Thông số hiệu năng</label>
+              <textarea id="createProdDesc" class="admin-form-input" style="min-height: 100px; resize: vertical;" placeholder="Chi tiết độ cứng thân vợt, điểm cân bằng, vật liệu cấu trúc carbon, mức căng cước đề xuất..."></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 12px; border-top: 1px solid #EBEBEB; padding-top: 20px;">
+              <a href="admin-products.html" class="btn-admin btn-admin-secondary">HỦY BỎ</a>
+              <button type="submit" class="btn-admin btn-admin-primary" id="btnSubmitCreateProduct">
+                <span>TẠO & XUẤT BẢN SẢN PHẨM</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="../../js/admin/product/product-api.js"></script>
+  <script src="../../js/admin/product/product-create.js"></script>
+</body>
+</html>

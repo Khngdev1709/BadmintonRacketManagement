@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Sử Đơn Hàng | SMASH SEO SPORTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout/variables.css">
+  <link rel="stylesheet" href="css/layout/layout.css">
+  <link rel="stylesheet" href="css/order/user-orders.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="site-container top-notice-content">
+      <div>Hệ thống bán lẻ & cho thuê vợt cầu lông chính hãng toàn quốc</div>
+      <div><span class="notice-highlight">MIỄN PHÍ CĂNG CƯỚC</span> CHO MỌI ĐƠN HÀNG MUA VỢT • GIAO HỎA TỐC 2H</div>
+    </div>
+  </div>
+
+  <!-- Global Two-Row Header -->
+  <header class="site-header">
+    
+    <!-- Top Row (White Background) -->
+    <div class="header-top-row">
+      <div class="site-container header-top-inner">
+        
+        <!-- Logo (Left) -->
+        <a href="index.html" class="site-logo">
+          <div class="logo-badge">SEO</div>
+          <div class="logo-text-group">
+            <span class="logo-title">SMASH SEO</span>
+            <span class="logo-subtitle">Hệ Thống Cầu Lông Số 1</span>
+          </div>
+        </a>
+
+        <!-- Hotline with Red Text (Center-Left) -->
+        <div class="header-hotline">
+          <div class="hotline-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="hotline-meta">
+            <span class="hotline-label">Hotline tư vấn</span>
+            <span class="hotline-phone">0788.612.979</span>
+          </div>
+        </div>
+
+        <!-- Wide Search Bar with Light Gray Background (Center) -->
+        <div class="header-search">
+          <form class="search-form" id="headerSearchForm">
+            <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm vợt Yonex Astrox, Victor Thruster, Lining...">
+            <button type="submit" class="search-button" aria-label="Tìm kiếm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Icons: Tracking, Account, Cart -->
+        <div class="header-top-actions">
+          
+          <a href="user-orders.html" class="header-action-item" title="Tra cứu đơn hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Tra cứu</span>
+              <span class="action-val">Đơn hàng</span>
+            </div>
+          </a>
+
+          <div id="headerUserAction">
+            <!-- Dynamically populated by layout.js -->
+          </div>
+
+          <a href="cart.html" class="header-action-item" title="Giỏ hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="cart-count-badge" id="navCartCount" style="display: none;">0</span>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Giỏ hàng</span>
+              <span class="action-val">Mua sắm</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Row (Solid Orange Navbar) -->
+    <nav class="header-bottom-navbar">
+      <div class="site-container">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="index.html" class="nav-menu-link">Trang chủ</a></li>
+          <li class="nav-menu-item"><a href="products.html" class="nav-menu-link">Sản phẩm</a></li>
+          <li class="nav-menu-item"><a href="dashboard.html#rentals" class="nav-menu-link">Dịch Vụ Thuê Vợt</a></li>
+          <li class="nav-menu-item"><a href="index.html#news" class="nav-menu-link">Tin tức</a></li>
+          <li class="nav-menu-item"><a href="index.html#contact" class="nav-menu-link">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="site-container user-orders-section">
+    
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-section" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item"><span>&gt;</span></li>
+        <li class="breadcrumb-item"><a href="dashboard.html">Tài khoản</a></li>
+        <li class="breadcrumb-item"><span>&gt;</span></li>
+        <li class="breadcrumb-item active" aria-current="page">Lịch sử đơn hàng</li>
+      </ol>
+    </nav>
+
+    <!-- Page Title Header -->
+    <div class="orders-page-header">
+      <h1 class="orders-page-title">
+        LỊCH SỬ ĐƠN HÀNG CỦA BẠN
+      </h1>
+      <p class="orders-page-subtitle">Theo dõi trạng thái giao nhận và quản lý các đơn hàng bạn đã mua sắm tại Smash SEO Sports</p>
+    </div>
+
+    <!-- Filter Tabs by Status -->
+    <div class="orders-filter-tabs" role="tablist">
+      <button type="button" class="order-tab-btn active" data-status="ALL">
+        Tất cả <span class="order-tab-badge" id="badgeCount-ALL">0</span>
+      </button>
+      <button type="button" class="order-tab-btn" data-status="Pending">
+        Chờ duyệt <span class="order-tab-badge" id="badgeCount-Pending">0</span>
+      </button>
+      <button type="button" class="order-tab-btn" data-status="Confirmed">
+        Đã xác nhận <span class="order-tab-badge" id="badgeCount-Confirmed">0</span>
+      </button>
+      <button type="button" class="order-tab-btn" data-status="Shipped">
+        Đang giao <span class="order-tab-badge" id="badgeCount-Shipped">0</span>
+      </button>
+      <button type="button" class="order-tab-btn" data-status="Delivered">
+        Hoàn tất <span class="order-tab-badge" id="badgeCount-Delivered">0</span>
+      </button>
+      <button type="button" class="order-tab-btn" data-status="Cancelled">
+        Đã hủy <span class="order-tab-badge" id="badgeCount-Cancelled">0</span>
+      </button>
+    </div>
+
+    <!-- Orders Container -->
+    <div id="userOrdersContainer">
+      <!-- Populated dynamically by user-orders.js -->
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="site-container footer-content-grid">
+      
+      <!-- Brand Info -->
+      <div class="footer-col">
+        <div class="footer-brand">
+          <div class="logo-badge">SEO</div>
+          <span class="footer-brand-name">SMASH SEO SPORTS</span>
+        </div>
+        <p class="footer-desc">
+          Chuỗi cửa hàng phân phối dụng cụ & cho thuê vợt cầu lông cao cấp hàng đầu Việt Nam. Cam kết 100% chính hãng từ Yonex, Victor, Li-Ning...
+        </p>
+        <div class="footer-contact-item">
+          <strong>Địa chỉ:</strong> 123 Cầu Giấy, Phường Quan Hoa, Quận Cầu Giấy, Hà Nội
+        </div>
+        <div class="footer-contact-item">
+          <strong>Hotline đặt hàng:</strong> <span class="footer-red-text">0788.612.979</span> (8:00 - 22:00)
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">VỀ CHÚNG TÔI</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Giới thiệu Smash SEO Sports</a></li>
+          <li><a href="products.html">Hệ thống showroom toàn quốc</a></li>
+          <li><a href="index.html#news">Tin tức cầu lông & giải đấu</a></li>
+          <li><a href="dashboard.html#rentals">Quy định thuê vợt tập & thi đấu</a></li>
+          <li><a href="index.html#contact">Tuyển dụng nhân tài</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Policies -->
+      <div class="footer-col">
+        <h4 class="footer-heading">CHÍNH SÁCH BÁN HÀNG</h4>
+        <ul class="footer-links-list">
+          <li><a href="javascript:void(0)">Chính sách bảo hành vợt 90 ngày</a></li>
+          <li><a href="javascript:void(0)">Chính sách đổi trả trong 7 ngày</a></li>
+          <li><a href="javascript:void(0)">Phương thức vận chuyển hỏa tốc</a></li>
+          <li><a href="javascript:void(0)">Hướng dẫn thanh toán & đặt cọc thuê</a></li>
+          <li><a href="javascript:void(0)">Bảo mật thông tin khách hàng</a></li>
+        </ul>
+      </div>
+
+      <!-- Trust Badges & Hotline -->
+      <div class="footer-col">
+        <h4 class="footer-heading">TỔNG ĐÀI HỖ TRỢ</h4>
+        <div class="footer-hotline-card">
+          <div class="hotline-card-title">Tư vấn chọn vợt & cước:</div>
+          <div class="hotline-card-number">0788.612.979</div>
+          <div class="hotline-card-note">Cước phí cuộc gọi tính theo nhà mạng</div>
+        </div>
+        <div class="footer-badges">
+          <div class="footer-badge-pill">✓ 100% CHÍNH HÃNG</div>
+          <div class="footer-badge-pill">✓ ĐỔI TRẢ 7 NGÀY</div>
+          <div class="footer-badge-pill">✓ CĂNG CƯỚC ĐIỆN TỬ</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="site-container footer-bottom-inner">
+        <div>© 2026 SMASH SEO SPORTS VIETNAM. Bản quyền thuộc về Hệ thống phân phối & cho thuê vợt cầu lông SEO.</div>
+        <div class="footer-payment-methods">
+          <span>COD Miễn Phí</span> • <span>Chuyển Khoản Ngân Hàng</span> • <span>VNPay QR</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/layout/layout.js"></script>
+  <script src="js/order/order-api.js"></script>
+  <script src="js/order/user-orders.js"></script>
+</body>
+</html>

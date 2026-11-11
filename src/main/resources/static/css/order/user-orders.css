@@ -1,0 +1,367 @@
+/* ==========================================================================
+   SMASH BADMINTON (SEO SPORTS) - USER ORDER HISTORY STYLES (user-orders.html)
+   Clean white card layout, status badges, order item rows, responsive
+   ========================================================================== */
+
+.user-orders-section {
+  padding: 30px 0 60px;
+  min-height: calc(100vh - 280px);
+}
+
+.orders-page-header {
+  margin-bottom: 24px;
+}
+
+.orders-page-title {
+  font-family: var(--font-family-display, 'Oswald', sans-serif);
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 0.02em;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.orders-page-subtitle {
+  color: #666666;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   ORDER STATUS TABS FILTER
+   -------------------------------------------------------------------------- */
+.orders-filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #EBEBEB;
+}
+
+.order-tab-btn {
+  padding: 10px 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #555555;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.order-tab-btn:hover {
+  color: #EA5C0B;
+  background-color: #FFF2EB;
+}
+
+.order-tab-btn.active {
+  color: #FFFFFF;
+  background-color: #EA5C0B;
+  font-weight: 700;
+}
+
+.order-tab-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin-left: 6px;
+}
+
+.order-tab-btn.active .order-tab-badge {
+  background-color: #FFFFFF;
+  color: #EA5C0B;
+}
+
+/* --------------------------------------------------------------------------
+   ORDER CARDS LIST
+   -------------------------------------------------------------------------- */
+.orders-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #EBEBEB;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.order-header-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.order-id-label {
+  font-family: var(--font-family-display, 'Oswald', sans-serif);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: 0.02em;
+}
+
+.order-date-text {
+  font-size: 0.8125rem;
+  color: #777777;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.status-badge-pending {
+  background-color: #FFF8E1;
+  color: #F57C00;
+  border: 1px solid #FFE082;
+}
+
+.status-badge-confirmed {
+  background-color: #E3F2FD;
+  color: #1976D2;
+  border: 1px solid #BBDEFB;
+}
+
+.status-badge-shipped {
+  background-color: #F3E5F5;
+  color: #7B1FA2;
+  border: 1px solid #E1BEE7;
+}
+
+.status-badge-delivered {
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  border: 1px solid #C8E6C9;
+}
+
+.status-badge-cancelled {
+  background-color: #FFEBEE;
+  color: #C62828;
+  border: 1px solid #FFCDD2;
+}
+
+/* Card Body (Item Rows) */
+.order-card-body {
+  padding: 16px 20px;
+}
+
+.order-item-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.order-item-row:last-child {
+  border-bottom: none;
+}
+
+.order-item-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #EBEBEB;
+  flex-shrink: 0;
+}
+
+.order-item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.order-item-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 4px;
+}
+
+.order-item-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.order-item-name a:hover {
+  color: #EA5C0B;
+}
+
+.order-item-pricing {
+  font-size: 0.8125rem;
+  color: #666666;
+}
+
+.order-item-subtotal {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #333333;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Card Footer */
+.order-card-footer {
+  padding: 14px 20px;
+  background-color: #FAFAFA;
+  border-top: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.order-shipping-info {
+  font-size: 0.8125rem;
+  color: #666666;
+  max-width: 60%;
+}
+
+.order-shipping-info strong {
+  color: #333333;
+}
+
+.order-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.order-total-block {
+  text-align: right;
+}
+
+.order-total-label {
+  font-size: 0.75rem;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+.order-total-val {
+  font-family: var(--font-family-display, 'Oswald', sans-serif);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #D32F2F;
+}
+
+.btn-order-reorder {
+  padding: 8px 16px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #EA5C0B;
+  background-color: #FFFFFF;
+  border: 1px solid #EA5C0B;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-order-reorder:hover {
+  background-color: #EA5C0B;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   EMPTY & UNAUTHENTICATED STATES
+   -------------------------------------------------------------------------- */
+.orders-empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+}
+
+.empty-state-icon {
+  width: 64px;
+  height: 64px;
+  color: #9CA3AF;
+  margin: 0 auto 16px;
+  display: block;
+}
+
+.empty-state-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.empty-state-desc {
+  font-size: 0.875rem;
+  color: #666666;
+  margin-bottom: 24px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary-orange {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #EA5C0B;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary-orange:hover {
+  background-color: #D04F07;
+}
+
+/* Loading skeleton */
+.orders-loading-spinner {
+  text-align: center;
+  padding: 50px 0;
+  color: #EA5C0B;
+  font-weight: 600;
+}

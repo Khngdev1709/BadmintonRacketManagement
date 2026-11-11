@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Vợt Cầu Lông | SMASH SEO SPORTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout/variables.css">
+  <link rel="stylesheet" href="css/layout/layout.css">
+  <link rel="stylesheet" href="css/product/product-detail.css">
+  <link rel="stylesheet" href="css/rental/rental.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="site-container top-notice-content">
+      <div>Hệ thống bán lẻ & cho thuê vợt cầu lông chính hãng toàn quốc</div>
+      <div><span class="notice-highlight">MIỄN PHÍ CĂNG CƯỚC</span> CHO MỌI ĐƠN HÀNG MUA VỢT • GIAO HỎA TỐC 2H</div>
+    </div>
+  </div>
+
+  <!-- Global Two-Row Header -->
+  <header class="site-header">
+    
+    <!-- Top Row (White Background) -->
+    <div class="header-top-row">
+      <div class="site-container header-top-inner">
+        
+        <!-- Logo (Left) -->
+        <a href="index.html" class="site-logo">
+          <div class="logo-badge">SEO</div>
+          <div class="logo-text-group">
+            <span class="logo-title">SMASH SEO</span>
+            <span class="logo-subtitle">Hệ Thống Cầu Lông Số 1</span>
+          </div>
+        </a>
+
+        <!-- Hotline with Red Text (Center-Left) -->
+        <div class="header-hotline">
+          <div class="hotline-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="hotline-meta">
+            <span class="hotline-label">Hotline tư vấn</span>
+            <span class="hotline-phone">0788.612.979</span>
+          </div>
+        </div>
+
+        <!-- Wide Search Bar with Light Gray Background (Center) -->
+        <div class="header-search">
+          <form class="search-form" id="headerSearchForm">
+            <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm vợt Yonex Astrox, Victor Thruster, Lining...">
+            <button type="submit" class="search-button" aria-label="Tìm kiếm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Icons: Tracking, Account, Cart -->
+        <div class="header-top-actions">
+          
+          <a href="user-orders.html" class="header-action-item" title="Tra cứu đơn hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Tra cứu</span>
+              <span class="action-val">Đơn hàng</span>
+            </div>
+          </a>
+
+          <div id="headerUserAction">
+            <!-- Dynamically populated by layout.js -->
+          </div>
+
+          <a href="cart.html" class="header-action-item" title="Giỏ hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="cart-count-badge" id="navCartCount" style="display: none;">0</span>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Giỏ hàng</span>
+              <span class="action-val">Mua sắm</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Row (Solid Orange Navbar) -->
+    <nav class="header-bottom-navbar">
+      <div class="site-container">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="index.html" class="nav-menu-link">Trang chủ</a></li>
+          <li class="nav-menu-item"><a href="products.html" class="nav-menu-link active">Sản phẩm</a></li>
+          <li class="nav-menu-item"><a href="dashboard.html#rentals" class="nav-menu-link">Dịch Vụ Thuê Vợt</a></li>
+          <li class="nav-menu-item"><a href="index.html#news" class="nav-menu-link">Tin tức</a></li>
+          <li class="nav-menu-item"><a href="index.html#contact" class="nav-menu-link">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Product Detail Content Area -->
+  <main class="site-container">
+    
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-section" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-separator">&gt;</li>
+        <li><a href="products.html">Sản phẩm</a></li>
+        <li class="breadcrumb-separator">&gt;</li>
+        <li class="breadcrumb-current" id="breadcrumbProductTitle">Vợt cầu lông</li>
+      </ol>
+    </nav>
+
+    <!-- Main Detail Card (2-Column) -->
+    <div class="product-detail-card">
+      
+      <!-- Left: Image Viewer & Thumbnail Gallery -->
+      <section class="detail-media-pane">
+        <div class="main-image-viewer">
+          <span class="detail-badge-discount" id="detail-discount-badge">-15%</span>
+          <img src="" alt="Hình ảnh vợt cầu lông" id="detail-main-image" class="detail-main-img">
+        </div>
+
+        <div class="thumbnail-gallery-row" id="detail-thumbnail-gallery">
+          <!-- Populated by product-detail.js -->
+        </div>
+      </section>
+
+      <!-- Right: Product Information & Action Area -->
+      <section class="detail-info-pane">
+        
+        <h1 class="detail-product-title" id="detail-title"></h1>
+
+        <div class="detail-meta-strip">
+          <div>Thương hiệu: <span class="meta-brand-name" id="detail-brand"></span></div>
+          <div>Mã SP: <strong id="detail-sku"></strong></div>
+          <div>Tình trạng: <span class="stock-status-pill" id="detail-stock"></span></div>
+          <div>Phiên bản: <strong id="detail-condition"></strong></div>
+        </div>
+
+        <!-- Large Red Price Box -->
+        <div class="detail-price-box">
+          <span class="detail-price-red" id="detail-price"></span>
+          <span class="detail-price-old" id="detail-old-price"></span>
+          <span class="detail-price-saving" id="detail-saving-badge">TIẾT KIỆM 15%</span>
+
+          <!-- Rental Option Banner -->
+          <div class="detail-rental-banner" id="detail-rental-banner" style="display: none;"></div>
+        </div>
+
+        <!-- Special Promotion Box -->
+        <div class="detail-promo-box">
+          <div class="promo-box-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            ƯU ĐÃI ĐẶC QUYỀN KHI MUA TẠI SMASH SEO
+          </div>
+          <ul class="promo-perks-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="promo-perk-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Tặng ngay:</strong> 01 Bao vợt nhung đơn cao cấp chống sốc & bảo vệ khung.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="promo-perk-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Miễn phí:</strong> 100% công căng cước điện tử chuẩn thi đấu quốc tế (theo số LBS tùy chọn).</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="promo-perk-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Bảo hành:</strong> 90 ngày 1 đổi 1 chính hãng nếu xảy ra lỗi do nhà sản xuất.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="promo-perk-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Chương trình Thử Vợt:</strong> Hoàn trả 100% tiền thuê khi quý khách quyết định mua vợt mới.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Actions Area: Quantity & Buttons -->
+        <div class="detail-actions-area">
+          <div class="quantity-control-row">
+            <span class="quantity-label">Số lượng:</span>
+            <div class="quantity-picker">
+              <button type="button" class="btn-qty" id="btnQtyMinus" aria-label="Giảm">-</button>
+              <input type="number" id="productQtyInput" class="qty-input" value="1" min="1" max="99" aria-label="Số lượng">
+              <button type="button" class="btn-qty" id="btnQtyPlus" aria-label="Tăng">+</button>
+            </div>
+          </div>
+
+          <div class="buttons-cluster-row">
+            <!-- Golden Yellow Button: MUA NGAY -->
+            <button type="button" class="btn-buy-now-yellow" id="btnBuyNowYellow">
+              MUA NGAY
+              <span>Giao hàng tận nơi hỏa tốc</span>
+            </button>
+
+            <!-- Solid Orange Button: Add to Cart -->
+            <button type="button" class="btn-add-cart-orange" id="btnAddToCartOrange">
+              THÊM VÀO GIỎ HÀNG
+              <span>Chọn thêm sản phẩm khác</span>
+            </button>
+
+            <!-- Solid Orange Button: Rent Racket (Shown when Condition == 'Used') -->
+            <button type="button" class="btn-rent-now-orange" id="btnRentNowOrange" style="display: none;">
+              THUÊ VỢT NGAY
+              <span class="btn-subtext">Trải nghiệm thi đấu với cọc linh hoạt</span>
+            </button>
+          </div>
+
+          <button type="button" class="btn-rent-trial" id="btnRentTrial">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>ĐẶT THUÊ VỢT TRẢI NGHIỆM TRÊN SÂN</span>
+          </button>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- Description & Technical Tabs -->
+    <section class="detail-tabs-container">
+      <div class="tabs-header-bar">
+        <button type="button" class="tab-nav-btn active" data-tab="tab-desc">MÔ TẢ SẢN PHẨM</button>
+        <button type="button" class="tab-nav-btn" data-tab="tab-specs">THÔNG SỐ KỸ THUẬT</button>
+        <button type="button" class="tab-nav-btn" data-tab="tab-policy">CHÍNH SÁCH BẢO HÀNH</button>
+      </div>
+
+      <div class="tab-panel-body active" id="tab-desc">
+        <p id="detail-description" style="margin-bottom: 16px;"></p>
+        <p>Tất cả sản phẩm bán ra tại hệ thống SMASH SEO Sports đều có tem chống hàng giả, phiếu bảo hành chính hãng và mã cào kiểm tra xuất xứ rõ ràng từ nhà phân phối.</p>
+      </div>
+
+      <div class="tab-panel-body" id="tab-specs">
+        <table class="specs-data-table">
+          <tbody>
+            <tr>
+              <td class="specs-label-col">Phân loại danh mục</td>
+              <td id="detail-spec-category"></td>
+            </tr>
+            <tr>
+              <td class="specs-label-col">Hãng sản xuất</td>
+              <td id="detail-spec-brand"></td>
+            </tr>
+            <tr>
+              <td class="specs-label-col">Trọng lượng / Chu vi cán</td>
+              <td>3U/G5 (88g) hoặc 4U/G5 (83g)</td>
+            </tr>
+            <tr>
+              <td class="specs-label-col">Độ cứng thân vợt</td>
+              <td>Cứng (Extra Stiff) - Đàn hồi Namd</td>
+            </tr>
+            <tr>
+              <td class="specs-label-col">Điểm cân bằng</td>
+              <td>300mm &plusmn; 2mm (Nặng đầu / Tấn công)</td>
+            </tr>
+            <tr>
+              <td class="specs-label-col">Sức căng tối đa khuyến nghị</td>
+              <td>28 - 30 LBS (12.5 - 13.5 kg)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-panel-body" id="tab-policy">
+        <h4 style="font-weight: 700; margin-bottom: 8px;">1. Quy định bảo hành chính hãng:</h4>
+        <p style="margin-bottom: 12px;">Sản phẩm được bảo hành trong vòng 90 ngày kể từ ngày mua. Bảo hành đổi mới 100% trong trường hợp nứt gãy tự nhiên do lỗi cấu trúc carbon của nhà sản xuất.</p>
+        <h4 style="font-weight: 700; margin-bottom: 8px;">2. Quy định đổi trả & hoàn tiền:</h4>
+        <p>Quý khách có quyền đổi sang model vợt khác trong vòng 7 ngày nếu chưa bóc màng cán vợt và chưa căng cước.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean Standard Footer (Vietnamese Retail) -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-main-grid">
+        
+        <div>
+          <h3 class="footer-col-title">HỆ THỐNG CỬA HÀNG SMASH SEO</h3>
+          <ul class="footer-contact-info">
+            <li><strong>Địa chỉ:</strong> 409 Huỳnh Văn Bánh, P.11, Q.Phú Nhuận, TP.Hồ Chí Minh</li>
+            <li><strong>Hotline Bán Hàng:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0788.612.979</span></li>
+            <li><strong>Hotline Thuê Vợt:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0969.123.456</span></li>
+            <li><strong>Email:</strong> cskh@smashseo.com</li>
+            <li><strong>Giờ mở cửa:</strong> 08:00 - 21:30 (Thứ 2 - Chủ Nhật)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">HỖ TRỢ KHÁCH HÀNG</h3>
+          <ul class="footer-links-list">
+            <li><a href="#">Hướng dẫn mua hàng online</a></li>
+            <li><a href="#">Chính sách bảo hành cước & khung</a></li>
+            <li><a href="#">Quy định đặt cọc & thuê vợt</a></li>
+            <li><a href="#">Chính sách đổi trả trong 7 ngày</a></li>
+            <li><a href="#">Bảng giá dịch vụ căng cước</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">DANH MỤC NỔI BẬT</h3>
+          <ul class="footer-links-list">
+            <li><a href="products.html?brand=Yonex">Vợt Yonex Astrox</a></li>
+            <li><a href="products.html?brand=Victor">Vợt Victor Thruster</a></li>
+            <li><a href="products.html?brand=Lining">Vợt Li-Ning Axforce</a></li>
+            <li><a href="products.html">Dòng vợt trợ lực cho nữ</a></li>
+            <li><a href="dashboard.html#rentals">Thuê vợt thi đấu cuối tuần</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col-title">NHẬN BẢN TIN KHUYẾN MÃI</h3>
+          <div class="footer-newsletter-box">
+            <p>Đăng ký email để nhận ngay voucher giảm 50.000 ₫ cho lần mua hoặc thuê vợt đầu tiên.</p>
+            <form class="footer-newsletter-form" onsubmit="event.preventDefault(); window.showToast('Cảm ơn quý khách đã đăng ký nhận tin khuyến mãi!');">
+              <input type="email" class="footer-newsletter-input" placeholder="Nhập email của bạn..." required>
+              <button type="submit" class="footer-newsletter-btn">GỬI</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 SMASH SEO SPORTS - Bản quyền thuộc Công ty TNHH Cầu Lông Thể Thao.</div>
+        <div>Giấy chứng nhận ĐKKD số: 0312984921 do Sở KH & ĐT TP.HCM cấp.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Rental Booking Modal (Phase 4: Rental Business Flow) -->
+  <div class="rental-modal-backdrop" id="rentalModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="rentalModalTitle">
+    <div class="rental-modal-card">
+      <div class="rental-modal-header">
+        <h3 class="rental-modal-title" id="rentalModalTitle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          ĐẶT THUÊ VỢT CẦU LÔNG
+        </h3>
+        <button type="button" class="rental-modal-close-btn" id="btnRentalModalClose" aria-label="Đóng cửa sổ">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="rental-modal-body">
+        <!-- Product Preview -->
+        <div class="rental-product-preview">
+          <img src="image/Yonex Astrox 100ZZ.jpg" alt="Vợt cầu lông" id="rentalPreviewImg" class="rental-preview-thumb">
+          <div>
+            <div class="rental-preview-name" id="rentalPreviewName">Tên Vợt Cầu Lông</div>
+            <div class="rental-preview-meta">Thương hiệu: <span id="rentalPreviewBrand">Yonex</span> • Giá thuê: <strong id="rentalPreviewRate">50.000 ₫/ngày</strong></div>
+          </div>
+        </div>
+
+        <!-- Rental Form -->
+        <form id="rentalBookingForm" novalidate>
+          <div class="rental-form-group">
+            <label for="rentalExpectedDate" class="rental-form-label">
+              Ngày dự kiến trả vợt <span class="required">*</span>
+            </label>
+            <input type="date" id="rentalExpectedDate" class="rental-form-input" required>
+          </div>
+
+          <div class="rental-form-group">
+            <label for="rentalDepositType" class="rental-form-label">
+              Hình thức đặt cọc <span class="required">*</span>
+            </label>
+            <select id="rentalDepositType" class="rental-form-select" required>
+              <option value="Tiền mặt">Tiền mặt (Hoàn trả 100% khi nhận lại vợt)</option>
+              <option value="Căn cước công dân">Căn cước công dân (CCCD gắn chip chính chủ)</option>
+            </select>
+          </div>
+
+          <div class="rental-form-group">
+            <label for="rentalNote" class="rental-form-label">
+              Ghi chú tình trạng lúc nhận vợt
+            </label>
+            <textarea id="rentalNote" class="rental-form-textarea" placeholder="Ví dụ: Kiểm tra không trầy xước viền, yêu cầu căng cước sẵn 10.5 kg..." maxlength="500"></textarea>
+          </div>
+
+          <!-- Dynamic Fee Calculation Box -->
+          <div class="rental-calc-box">
+            <div class="rental-calc-row">
+              <span>Đơn giá thuê mỗi ngày:</span>
+              <span id="rentalCalcRate" style="font-weight: 600;">-- ₫/ngày</span>
+            </div>
+            <div class="rental-calc-row">
+              <span>Số lượng vợt thuê:</span>
+              <span id="rentalCalcQty" style="font-weight: 600;">1 cây</span>
+            </div>
+            <div class="rental-calc-row">
+              <span>Dự tính số ngày thuê:</span>
+              <strong id="rentalCalcDays" style="color: #EA5C0B;">1 ngày</strong>
+            </div>
+            <div class="rental-calc-row total-row">
+              <span>Tạm tính phí thuê:</span>
+              <span class="rental-calc-total-price" id="rentalCalcTotal">0 ₫</span>
+            </div>
+          </div>
+
+          <div class="rental-modal-actions">
+            <button type="button" class="btn-cancel-rental" id="btnRentalCancel">HỦY BỎ</button>
+            <button type="submit" class="btn-confirm-rental" id="btnRentalSubmit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              XÁC NHẬN THUÊ
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/search/search-api.js"></script>
+  <script src="js/layout/layout.js"></script>
+  <script src="js/rental/rental-api.js"></script>
+  <script src="js/rental/rental-modal.js"></script>
+  <script src="js/product/product-api.js"></script>
+  <script src="js/product/product-detail.js"></script>
+</body>
+</html>

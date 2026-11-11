@@ -1,0 +1,118 @@
+/* ==========================================================================
+   SMASH BADMINTON (SEO SPORTS THEME) - DESIGN SYSTEM & CSS VARIABLES
+   Clean, bright, trustworthy, and traditional Vietnamese e-commerce layout
+   ========================================================================== */
+
+:root {
+  /* Clean Bright Backgrounds */
+  --color-bg-page: #F5F5F5;
+  --color-bg-white: #FFFFFF;
+  --color-bg-card: #FFFFFF;
+  --color-bg-subtle: #F8F9FA;
+  --color-bg-light-gray: #F0F2F5;
+
+  /* Primary Brand Colors (SEO Sports Inspired Bright Orange) */
+  --color-brand-orange: #EA5C0B;
+  --color-brand-orange-hover: #D44E04;
+  --color-brand-orange-light: #FFF3EB;
+
+  /* Secondary Button Color (Golden Yellow for "Mua ngay") */
+  --color-brand-yellow: #FFC107;
+  --color-brand-yellow-hover: #E0A800;
+  --color-brand-yellow-text: #000000;
+
+  /* Accent & Status Colors */
+  --color-hotline-red: #D32F2F;
+  --color-price-red: #E53935;
+  --color-badge-red: #ED1C24;
+  --color-success-green: #2E7D32;
+  --color-info-blue: #1976D2;
+
+  /* Text Colors */
+  --color-text-main: #333333;
+  --color-text-heading: #222222;
+  --color-text-muted: #666666;
+  --color-text-light: #888888;
+  --color-text-white: #FFFFFF;
+
+  /* Borders & Dividers - Thin Light Gray */
+  --color-border-light: #EBEBEB;
+  --color-border-subtle: #EEEEEE;
+  --color-border-medium: #DDDDDD;
+  --color-border-orange: #EA5C0B;
+
+  /* Typography */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family-display: 'Oswald', 'Inter', sans-serif;
+
+  /* Friendly Rounded Corners (4px to 8px) */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-circle: 50%;
+
+  /* Soft Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --shadow-dropdown: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.25s ease-in-out;
+
+  /* Layout Widths */
+  --max-content-width: 1200px;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.site-container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}

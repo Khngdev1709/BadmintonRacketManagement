@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký Tài khoản | SMASH SEO SPORTS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/layout/variables.css">
+  <link rel="stylesheet" href="css/layout/layout.css">
+  <link rel="stylesheet" href="css/auth/auth.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="site-container top-notice-content">
+      <div>Hệ thống bán lẻ & cho thuê vợt cầu lông chính hãng toàn quốc</div>
+      <div><span class="notice-highlight">MIỄN PHÍ CĂNG CƯỚC</span> CHO MỌI ĐƠN HÀNG MUA VỢT • GIAO HỎA TỐC 2H</div>
+    </div>
+  </div>
+
+  <!-- Global Two-Row Header -->
+  <header class="site-header">
+    <div class="header-top-row">
+      <div class="site-container header-top-inner">
+        <a href="index.html" class="site-logo">
+          <div class="logo-badge">SEO</div>
+          <div class="logo-text-group">
+            <span class="logo-title">SMASH SEO</span>
+            <span class="logo-subtitle">Hệ Thống Cầu Lông Số 1</span>
+          </div>
+        </a>
+
+        <div class="header-hotline">
+          <div class="hotline-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="hotline-meta">
+            <span class="hotline-label">Hotline tư vấn</span>
+            <span class="hotline-phone">0788.612.979</span>
+          </div>
+        </div>
+
+        <div class="header-search">
+          <form class="search-form" id="headerSearchForm">
+            <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm vợt Yonex Astrox, Victor Thruster, Lining...">
+            <button type="submit" class="search-button" aria-label="Tìm kiếm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-top-actions">
+          <a href="dashboard.html#orders" class="header-action-item" title="Tra cứu đơn hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Tra cứu</span>
+              <span class="action-val">Đơn hàng</span>
+            </div>
+          </a>
+
+          <div id="headerUserAction">
+            <!-- Dynamically populated by layout.js -->
+          </div>
+
+          <a href="dashboard.html#orders" class="header-action-item" title="Giỏ hàng">
+            <div class="header-action-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="cart-count-badge" id="navCartCount" style="display: none;">0</span>
+            </div>
+            <div class="header-action-text">
+              <span class="action-label">Giỏ hàng</span>
+              <span class="action-val">Mua sắm</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row (Navbar) -->
+    <nav class="header-bottom-navbar">
+      <div class="site-container">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="index.html" class="nav-menu-link">Trang chủ</a></li>
+          <li class="nav-menu-item"><a href="products.html" class="nav-menu-link">Sản phẩm</a></li>
+          <li class="nav-menu-item"><a href="dashboard.html#rentals" class="nav-menu-link">Dịch Vụ Thuê Vợt</a></li>
+          <li class="nav-menu-item"><a href="index.html#news" class="nav-menu-link">Tin tức</a></li>
+          <li class="nav-menu-item"><a href="index.html#contact" class="nav-menu-link">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Split-Screen Auth Wrapper -->
+  <main class="auth-wrapper">
+    <div class="auth-container">
+      
+      <!-- Left Lifestyle Media Showcase -->
+      <section class="auth-media-pane">
+        <img src="https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?q=80&w=1200&auto=format&fit=crop" 
+             alt="Cú đập cầu lông mạnh mẽ" 
+             class="auth-media-bg">
+        <div class="auth-media-overlay"></div>
+
+        <div class="auth-media-content auth-media-header">
+          <span class="auth-brand-badge">ĐĂNG KÝ THÀNH VIÊN SEO</span>
+        </div>
+
+        <div class="auth-media-content auth-media-body">
+          <span class="auth-media-tagline">SẴN SÀNG RA SÂN</span>
+          <h1 class="auth-media-title">GIA NHẬP CỘNG ĐỒNG <span>SEO SPORTS</span></h1>
+          <p class="auth-media-desc">
+            Nhận ngay ưu đãi thành viên độc quyền: giảm giá mua vợt, ưu tiên thuê vợt cao cấp cuối tuần và tích lũy điểm đổi quà hấp dẫn.
+          </p>
+
+          <ul class="auth-feature-list">
+            <li class="auth-feature-item">
+              <span class="auth-feature-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Ưu tiên đặt thuê các dòng vợt siêu phẩm Yonex Astrox & Victor Thruster</span>
+            </li>
+            <li class="auth-feature-item">
+              <span class="auth-feature-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Chính sách cấn trừ tiền thuê khi quyết định mua vợt mới</span>
+            </li>
+            <li class="auth-feature-item">
+              <span class="auth-feature-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Lưu trữ thông số kỹ thuật đũa vợt và mức căng cước cá nhân</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="auth-media-content auth-media-footer">
+          <span>Giao hàng toàn quốc & Quy chuẩn cọc minh bạch</span>
+          <span>Cổng thành viên an toàn bảo mật</span>
+        </div>
+      </section>
+
+      <!-- Right Form Pane -->
+      <section class="auth-form-pane">
+        <div class="auth-card" style="max-width: 540px;">
+          <header class="auth-header">
+            <span class="auth-kicker">ĐĂNG KÝ TÀI KHOẢN MỚI</span>
+            <h2 class="auth-title">TẠO TÀI KHOẢN</h2>
+            <p class="auth-subtitle">Điền thông tin bên dưới để bắt đầu trải nghiệm mua sắm và thuê vợt thi đấu.</p>
+          </header>
+
+          <!-- Feedback Alert -->
+          <div id="authAlert" class="auth-alert" role="alert"></div>
+
+          <!-- Register Form -->
+          <form id="registerForm" class="auth-form" novalidate>
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="regFullName" class="form-label">Họ và tên *</label>
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </span>
+                  <input type="text" id="regFullName" class="form-input" placeholder="Ví dụ: Nguyễn Văn An" required autocomplete="name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="regUsername" class="form-label">Tên tài khoản *</label>
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+                  </span>
+                  <input type="text" id="regUsername" class="form-input" placeholder="Ví dụ: vanan2026" required autocomplete="username">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="regEmail" class="form-label">Địa chỉ Email *</label>
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </span>
+                  <input type="email" id="regEmail" class="form-input" placeholder="vanan@gmail.com" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="regPhone" class="form-label">Số điện thoại *</label>
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </span>
+                  <input type="tel" id="regPhone" class="form-input" placeholder="0912345678" required autocomplete="tel">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="regAddress" class="form-label">Địa chỉ nhận hàng</label>
+              <div class="input-container">
+                <span class="input-icon-left">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </span>
+                <input type="text" id="regAddress" class="form-input" placeholder="Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành..." autocomplete="street-address">
+              </div>
+            </div>
+
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="regPassword" class="form-label">Mật khẩu *</label>
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="0" ry="0"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  </span>
+                  <input type="password" id="regPassword" class="form-input" placeholder="Tối thiểu 6 ký tự" required autocomplete="new-password">
+                  <button type="button" class="password-toggle-btn" data-target="regPassword" aria-label="Ẩn/hiện mật khẩu">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="7" r="3"></circle></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="regConfirmPassword" class="form-label">Xác nhận mật khẩu *</label>
+                <div class="input-container">
+                  <span class="input-icon-left">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="0" ry="0"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  </span>
+                  <input type="password" id="regConfirmPassword" class="form-input" placeholder="Nhập lại mật khẩu" required autocomplete="new-password">
+                  <button type="button" class="password-toggle-btn" data-target="regConfirmPassword" aria-label="Ẩn/hiện mật khẩu">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="7" r="3"></circle></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-meta-row">
+              <label class="checkbox-label">
+                <input type="checkbox" id="regAgreeTerms" class="sharp-checkbox" required>
+                <span>Tôi đồng ý với <a href="#" class="form-label-link">Điều khoản Dịch vụ</a> và <a href="#" class="form-label-link">Chính sách Thuê vợt</a> của SEO Sports</span>
+              </label>
+            </div>
+
+            <button type="submit" id="btnRegisterSubmit" class="btn-auth-submit">
+              <span>ĐĂNG KÝ TÀI KHOẢN NGAY</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </form>
+
+          <div class="auth-switch-link">
+            Đã có tài khoản thành viên?
+            <a href="login.html">Đăng nhập tại đây</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Clean Standard Footer -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-main-grid">
+        <div>
+          <h3 class="footer-col-title">HỆ THỐNG CỬA HÀNG SMASH SEO</h3>
+          <ul class="footer-contact-info">
+            <li><strong>Địa chỉ:</strong> 409 Huỳnh Văn Bánh, P.11, Q.Phú Nhuận, TP.Hồ Chí Minh</li>
+            <li><strong>Hotline:</strong> <span style="color: var(--color-hotline-red); font-weight: 700;">0788.612.979</span></li>
+            <li><strong>Email:</strong> cskh@smashseo.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 SMASH SEO SPORTS - Bản quyền thuộc Công ty TNHH Cầu Lông Thể Thao.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/search/search-api.js"></script>
+  <script src="js/layout/layout.js"></script>
+  <script src="js/auth/auth-api.js"></script>
+  <script src="js/auth/auth.js"></script>
+</body>
+</html>
